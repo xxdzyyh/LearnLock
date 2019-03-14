@@ -1,0 +1,27 @@
+{
+  "name": "XFDemoTableViewVC",
+  "version": "0.1.0",
+  "summary": "一个简单的tableViewController,用于学习和效果演示",
+  "description": "一个简单的tableViewController,使用场景，点击查看效果，用于学习知识点",
+  "homepage": "https://github.com/xxdzyyh/XFDemoTableViewVC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xxdzyyh@163.com": "xxdzyyh@163.com"
+  },
+  "source": {
+    "git": "https://github.com/xxdzyyh/XFDemoTableViewVC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XFDemoTableViewVC/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  }
+}

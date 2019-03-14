@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D32DF3A086BC9A0472C851E /* libPods-LearnLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9467DE30389099A628CC72EC /* libPods-LearnLock.a */; };
+		D437D60421056AFC009D5E42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D437D60321056AFC009D5E42 /* AppDelegate.m */; };
+		D437D60721056AFC009D5E42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D437D60621056AFC009D5E42 /* ViewController.m */; };
+		D437D60A21056AFC009D5E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D437D60821056AFC009D5E42 /* Main.storyboard */; };
+		D437D60C21056AFF009D5E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D437D60B21056AFF009D5E42 /* Assets.xcassets */; };
+		D437D60F21056AFF009D5E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D437D60D21056AFF009D5E42 /* LaunchScreen.storyboard */; };
+		D437D61221056AFF009D5E42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D437D61121056AFF009D5E42 /* main.m */; };
+		D44804262238955200184A7D /* NSLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44804252238955200184A7D /* NSLockViewController.m */; };
+		D448042A2238D70B00184A7D /* PThreadMutexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44804292238D70B00184A7D /* PThreadMutexViewController.m */; };
+		D448042C2238D96B00184A7D /* libpthread.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D448042B2238D96B00184A7D /* libpthread.tbd */; };
+		D44804302238F2FC00184A7D /* NSConditionLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D448042F2238F2FC00184A7D /* NSConditionLockVC.m */; };
+		D4480434223A3C1B00184A7D /* NSContiditionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4480433223A3C1B00184A7D /* NSContiditionVC.m */; };
+		D4480438223A604A00184A7D /* DispatchSemaphoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4480437223A604A00184A7D /* DispatchSemaphoreVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0671FC6B5B27EA3E3BD4AAD4 /* Pods-LearnLock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnLock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnLock/Pods-LearnLock.debug.xcconfig"; sourceTree = "<group>"; };
+		9467DE30389099A628CC72EC /* libPods-LearnLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnLock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9626068951775B4E02FB79C6 /* Pods-LearnLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnLock.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnLock/Pods-LearnLock.release.xcconfig"; sourceTree = "<group>"; };
+		D437D5FF21056AFC009D5E42 /* LearnLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D437D60221056AFC009D5E42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D437D60321056AFC009D5E42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D437D60521056AFC009D5E42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D437D60621056AFC009D5E42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D437D60921056AFC009D5E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D437D60B21056AFF009D5E42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D437D60E21056AFF009D5E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D437D61021056AFF009D5E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D437D61121056AFF009D5E42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D44804242238955200184A7D /* NSLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockViewController.h; sourceTree = "<group>"; };
+		D44804252238955200184A7D /* NSLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockViewController.m; sourceTree = "<group>"; };
+		D44804282238D70B00184A7D /* PThreadMutexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PThreadMutexViewController.h; sourceTree = "<group>"; };
+		D44804292238D70B00184A7D /* PThreadMutexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PThreadMutexViewController.m; sourceTree = "<group>"; };
+		D448042B2238D96B00184A7D /* libpthread.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpthread.tbd; path = usr/lib/libpthread.tbd; sourceTree = SDKROOT; };
+		D448042E2238F2FC00184A7D /* NSConditionLockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockVC.h; sourceTree = "<group>"; };
+		D448042F2238F2FC00184A7D /* NSConditionLockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockVC.m; sourceTree = "<group>"; };
+		D4480432223A3C1B00184A7D /* NSContiditionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSContiditionVC.h; sourceTree = "<group>"; };
+		D4480433223A3C1B00184A7D /* NSContiditionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSContiditionVC.m; sourceTree = "<group>"; };
+		D4480436223A604A00184A7D /* DispatchSemaphoreVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreVC.h; sourceTree = "<group>"; };
+		D4480437223A604A00184A7D /* DispatchSemaphoreVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D437D5FC21056AFC009D5E42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D448042C2238D96B00184A7D /* libpthread.tbd in Frameworks */,
+				8D32DF3A086BC9A0472C851E /* libPods-LearnLock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430FFB3C888F99BA905FCA49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0671FC6B5B27EA3E3BD4AAD4 /* Pods-LearnLock.debug.xcconfig */,
+				9626068951775B4E02FB79C6 /* Pods-LearnLock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		64F910F964A18764965846AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D448042B2238D96B00184A7D /* libpthread.tbd */,
+				9467DE30389099A628CC72EC /* libPods-LearnLock.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D437D5F621056AFC009D5E42 = {
+			isa = PBXGroup;
+			children = (
+				D437D60121056AFC009D5E42 /* LearnLock */,
+				D437D60021056AFC009D5E42 /* Products */,
+				430FFB3C888F99BA905FCA49 /* Pods */,
+				64F910F964A18764965846AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D437D60021056AFC009D5E42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D437D5FF21056AFC009D5E42 /* LearnLock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D437D60121056AFC009D5E42 /* LearnLock */ = {
+			isa = PBXGroup;
+			children = (
+				D4480435223A600800184A7D /* Semaphore */,
+				D4480431223A3BF500184A7D /* NSCondition */,
+				D448042D2238F2D000184A7D /* NSConditionLock */,
+				D44804272238D6DB00184A7D /* pthread_mutex */,
+				D44804232238953B00184A7D /* NSLock */,
+				D437D60221056AFC009D5E42 /* AppDelegate.h */,
+				D437D60321056AFC009D5E42 /* AppDelegate.m */,
+				D437D60521056AFC009D5E42 /* ViewController.h */,
+				D437D60621056AFC009D5E42 /* ViewController.m */,
+				D437D60821056AFC009D5E42 /* Main.storyboard */,
+				D437D60B21056AFF009D5E42 /* Assets.xcassets */,
+				D437D60D21056AFF009D5E42 /* LaunchScreen.storyboard */,
+				D437D61021056AFF009D5E42 /* Info.plist */,
+				D437D61121056AFF009D5E42 /* main.m */,
+			);
+			path = LearnLock;
+			sourceTree = "<group>";
+		};
+		D44804232238953B00184A7D /* NSLock */ = {
+			isa = PBXGroup;
+			children = (
+				D44804242238955200184A7D /* NSLockViewController.h */,
+				D44804252238955200184A7D /* NSLockViewController.m */,
+			);
+			path = NSLock;
+			sourceTree = "<group>";
+		};
+		D44804272238D6DB00184A7D /* pthread_mutex */ = {
+			isa = PBXGroup;
+			children = (
+				D44804282238D70B00184A7D /* PThreadMutexViewController.h */,
+				D44804292238D70B00184A7D /* PThreadMutexViewController.m */,
+			);
+			path = pthread_mutex;
+			sourceTree = "<group>";
+		};
+		D448042D2238F2D000184A7D /* NSConditionLock */ = {
+			isa = PBXGroup;
+			children = (
+				D448042E2238F2FC00184A7D /* NSConditionLockVC.h */,
+				D448042F2238F2FC00184A7D /* NSConditionLockVC.m */,
+			);
+			path = NSConditionLock;
+			sourceTree = "<group>";
+		};
+		D4480431223A3BF500184A7D /* NSCondition */ = {
+			isa = PBXGroup;
+			children = (
+				D4480432223A3C1B00184A7D /* NSContiditionVC.h */,
+				D4480433223A3C1B00184A7D /* NSContiditionVC.m */,
+			);
+			path = NSCondition;
+			sourceTree = "<group>";
+		};
+		D4480435223A600800184A7D /* Semaphore */ = {
+			isa = PBXGroup;
+			children = (
+				D4480436223A604A00184A7D /* DispatchSemaphoreVC.h */,
+				D4480437223A604A00184A7D /* DispatchSemaphoreVC.m */,
+			);
+			path = Semaphore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D437D5FE21056AFC009D5E42 /* LearnLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D437D61521056AFF009D5E42 /* Build configuration list for PBXNativeTarget "LearnLock" */;
+			buildPhases = (
+				D56F991AC338E9E3EC87A829 /* [CP] Check Pods Manifest.lock */,
+				D437D5FB21056AFC009D5E42 /* Sources */,
+				D437D5FC21056AFC009D5E42 /* Frameworks */,
+				D437D5FD21056AFC009D5E42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnLock;
+			productName = LearnLock;
+			productReference = D437D5FF21056AFC009D5E42 /* LearnLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D437D5F721056AFC009D5E42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = com.learn;
+				TargetAttributes = {
+					D437D5FE21056AFC009D5E42 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D437D5FA21056AFC009D5E42 /* Build configuration list for PBXProject "LearnLock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D437D5F621056AFC009D5E42;
+			productRefGroup = D437D60021056AFC009D5E42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D437D5FE21056AFC009D5E42 /* LearnLock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D437D5FD21056AFC009D5E42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D437D60F21056AFF009D5E42 /* LaunchScreen.storyboard in Resources */,
+				D437D60C21056AFF009D5E42 /* Assets.xcassets in Resources */,
+				D437D60A21056AFC009D5E42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D56F991AC338E9E3EC87A829 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnLock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D437D5FB21056AFC009D5E42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D448042A2238D70B00184A7D /* PThreadMutexViewController.m in Sources */,
+				D437D60721056AFC009D5E42 /* ViewController.m in Sources */,
+				D437D61221056AFF009D5E42 /* main.m in Sources */,
+				D44804262238955200184A7D /* NSLockViewController.m in Sources */,
+				D4480434223A3C1B00184A7D /* NSContiditionVC.m in Sources */,
+				D4480438223A604A00184A7D /* DispatchSemaphoreVC.m in Sources */,
+				D44804302238F2FC00184A7D /* NSConditionLockVC.m in Sources */,
+				D437D60421056AFC009D5E42 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D437D60821056AFC009D5E42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D437D60921056AFC009D5E42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D437D60D21056AFF009D5E42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D437D60E21056AFF009D5E42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D437D61321056AFF009D5E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D437D61421056AFF009D5E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D437D61621056AFF009D5E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0671FC6B5B27EA3E3BD4AAD4 /* Pods-LearnLock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnLock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.LearnLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D437D61721056AFF009D5E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9626068951775B4E02FB79C6 /* Pods-LearnLock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnLock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.LearnLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D437D5FA21056AFC009D5E42 /* Build configuration list for PBXProject "LearnLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D437D61321056AFF009D5E42 /* Debug */,
+				D437D61421056AFF009D5E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D437D61521056AFF009D5E42 /* Build configuration list for PBXNativeTarget "LearnLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D437D61621056AFF009D5E42 /* Debug */,
+				D437D61721056AFF009D5E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D437D5F721056AFC009D5E42 /* Project object */;
+}
