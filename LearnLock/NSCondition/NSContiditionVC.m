@@ -38,7 +38,7 @@ When your task is done, unlock the condition object.
     self.view.backgroundColor = [UIColor whiteColor];
     
     __block int a = 0;
-    
+    NSLog(@"a=0");
     NSCondition *cond = [NSCondition new];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -62,9 +62,8 @@ When your task is done, unlock the condition object.
         while (a != 1) {
             [cond wait];
         }
-        [cond unlock];
         NSLog(@"条件获得 1");
-        
+        [cond unlock];
     });
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -73,8 +72,8 @@ When your task is done, unlock the condition object.
         while (a != 2) {
             [cond wait];
         }
-        [cond unlock];
         NSLog(@"条件获得 2");
+        [cond unlock];
     });   
 }
 

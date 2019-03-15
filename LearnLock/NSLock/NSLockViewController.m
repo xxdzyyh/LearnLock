@@ -19,7 +19,9 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self threadNotSafe];
+//    [self threadNotSafe];
+    
+    [self test];
 }
 
 - (void)threadNotSafe {
@@ -34,6 +36,7 @@
             NSLog(@"total=%d",total);
         });
     }
+
     
 //    2019-03-13 09:57:05.063271+0800 LearnLock[16661:8000427] total=1
 //    2019-03-13 09:57:05.063271+0800 LearnLock[16661:8000428] total=2
@@ -62,6 +65,47 @@
             [lock unlock];
         });
     }
+}
+
+- (void)test {
+    
+    __block int flag = 0;
+    NSLock *lock = [[NSLock alloc] init];
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // 如果NSLock已经在 其他线程lock且未unlock,那么 lock 会失败
+        NSLog(@"lock %@",[NSThread currentThread]); 
+        [lock lock];
+        NSLog(@"Get Lock");
+        sleep(5);
+        [lock unlock];
+    });
+        
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"lock 1 %@",[NSThread currentThread]); 
+        
+        // bool success = [condition lock];
+        // while (!success) {
+        //     [condition wait];
+        // }
+        [lock lock];
+        
+        // bool success = [condition lock];
+        // while (!success) {
+        //     do nothing   
+        // }
+        bool success = [lock tryLock];
+        
+        NSLog(@"%d",success);
+        NSLog(@"Get Lock 1");
+
+        // [condition unlock];
+        // [condition broadcast];
+        [lock unlock];
+    });
+        
 }
 
 @end

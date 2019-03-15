@@ -2,4 +2,77 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "LearnLock/NSConditionLock/NSConditionLockVC.m"
+            timestampString = "574329855.205838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po i = 2;">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[NSConditionLockVC viewDidLoad]"
+                  moduleName = "LearnLock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaoniu/Workspace/LearnLock/LearnLock/NSConditionLock/NSConditionLockVC.m"
+                  timestampString = "574310080.933663"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "291">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__32-[NSConditionLockVC viewDidLoad]_block_invoke"
+                  moduleName = "LearnLock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaoniu/Workspace/LearnLock/LearnLock/NSConditionLock/NSConditionLockVC.m"
+                  timestampString = "574310080.935722"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_"
+                  moduleName = "LearnLock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaoniu/Workspace/LearnLock/LearnLock/NSConditionLock/NSConditionLockVC.m"
+                  timestampString = "574310080.937492"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "17">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

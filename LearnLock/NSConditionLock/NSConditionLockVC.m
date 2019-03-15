@@ -33,24 +33,30 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     NSConditionLock *lock = [[NSConditionLock alloc] initWithCondition:0];
-    __block int i = 0;
+    __block int i = 2;
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSLog(@"i=%d,[lock lockWhenCondition:1];",i);
-        // 外界传入条件为1，第一次执行，内置条件为0，无法获取锁，第二次执行，内置条件和外置条件都设置为1,可以获取锁
-        [lock lockWhenCondition:1];
-        NSLog(@"%d",i);
-        [lock unlockWithCondition:0];
-    });
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        NSLog(@"i=%d,[lock lockWhenCondition:1];",i);
+//        // 外界传入条件为1，第一次执行，内置条件为0，无法获取锁，第二次执行，内置条件和外置条件都设置为1,可以获取锁
+//        [lock lockWhenCondition:1];
+//        NSLog(@"protect code %d",i);
+//        [lock unlockWithCondition:0];
+//    });
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSLog(@"i=%d,[lock lockWhenCondition:0];",i);
-        [lock lockWhenCondition:0];
-        NSLog(@"%d",i);
+        [lock lockWhenCondition:2];
+        NSLog(@"protect code %d",i);
         i = 1;
         // 释放锁，同时将锁的内部条件设置为1
         [lock unlockWithCondition:1];
+        
+        NSLog(@"lalalal");
     });
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [lock unlockWithCondition:2];
+//    });
 }
 
 @end
